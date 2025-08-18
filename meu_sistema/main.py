@@ -16,5 +16,6 @@ def main():
     print("Buscando uma imagem aleatória de cachorro...")
     print("URL da imagem:", get_dog_image())
 
+
 if __name__ == "__main__":
     main()
