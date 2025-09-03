@@ -2,12 +2,12 @@
 import requests
 
 def get_cat_image():
-    """Busca uma imagem aleatória de um gato usando a Dog API"""
+    """Busca uma imagem aleatória de um gato usando a Cat API"""
     url = "https://cataas.com/cat"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        return data["message"]
+        return data["url"]
     else:
         return "Erro ao buscar imagem."
 
