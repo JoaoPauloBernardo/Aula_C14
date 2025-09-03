@@ -7,7 +7,7 @@ def get_cat_image():
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        return data["message"]
+        return data["url"]
     else:
         return "Erro ao buscar imagem."
 
